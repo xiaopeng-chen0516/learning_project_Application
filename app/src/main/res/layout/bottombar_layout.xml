@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MineBottomBarStyle"
+    android:elevation="@dimen/dp_2"
+    android:translationZ="@dimen/dp_3"
+    tools:showIn="@layout/activity_main">
+    <RadioGroup
+        android:id="@+id/bottombar"
+        style="@style/MineBottomBarStyle"
+        tools:showIn="@layout/activity_main">
+        <!-- 商城首页面 -->
+        <RadioButton
+            android:id="@+id/mr_shoppingmall"
+            android:drawableTop="@drawable/mr_shoppingmall"
+            android:text="@string/mr_shoppingmall"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 分类 -->
+        <RadioButton
+            android:id="@+id/mr_category"
+            android:drawableTop="@drawable/mr_category"
+            android:text="@string/mr_category"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 购物车 -->
+        <RadioButton
+            android:id="@+id/mr_shoppingcart"
+            android:drawableTop="@drawable/mr_shoppingcart"
+            android:text="@string/mr_shoppingcart"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 我的 -->
+        <RadioButton
+            android:id="@+id/mr_mine"
+            android:drawableTop="@drawable/mr_mine"
+            android:text="@string/mr_mine"
+            style="@style/MineBottomBarButtonStyle" />
+    </RadioGroup>
+    <!-- 遮罩 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/show_count"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- 界面的样式风格 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--状态栏背景颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 标题栏的样式 -->
+    <style name="MineTitleBarStyle">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/title_bar_background</item>
+        <item name="android:paddingTop">@dimen/dp_3</item>
+        <item name="android:paddingBottom">@dimen/dp_3</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+    </style>
+    <!-- 底部选择栏的样式 -->
+    <style name="MineBottomBarStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+        <item name="android:paddingBottom">@dimen/dp_2</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- 底部选择栏按钮的样式 -->
+    <style name="MineBottomBarButtonStyle">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@drawable/bottombar_text_selector_color</item>
+    </style>
+    <!-- 一个固定边距 -->
+    <style name="MarginStyle">
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+    </style>
+    <!-- 一个固定边距 -->
+    <style name="PaddingStyle">
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+    </style>
+    <!-- 背景不模糊的弹窗效果 -->
+    <style name="Custom_Dialog_Theme_Background_DimEnabled_False" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- 背景模糊的弹窗效果 -->
+    <style name="Custom_Dialog_Theme_Background_DimEnabled_True" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 弹窗的进入会退出动画 -->
+    <style name="Custom_Dialog_Anim_Style">
+        <item name="android:windowEnterAnimation">@anim/custom_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/custom_dialog_out</item>
+    </style>
+    <!-- 主页分类按钮的样式 -->
+    <style name="Home_Type_Style">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Mine_Item_Style">
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Mine_Image_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="Mine_Text_Style">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>
+

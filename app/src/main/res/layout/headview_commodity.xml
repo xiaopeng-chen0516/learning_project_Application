@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- 广告轮播 -->
+    <com.youth.banner.Banner
+        android:id="@+id/commodity_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        app:image_scale_type="fit_xy" />
+    <!-- 分类选择 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <RadioButton
+            android:id="@+id/shop_type1"
+            style="@style/Home_Type_Style"
+            android:drawableTop="@drawable/mr_shop_type1"
+            tools:text="东西南北" />
+        <RadioButton
+            android:id="@+id/shop_type2"
+            style="@style/Home_Type_Style"
+            android:drawableTop="@drawable/mr_shop_type2"
+            tools:text="东西南北" />
+        <RadioButton
+            android:id="@+id/shop_type3"
+            style="@style/Home_Type_Style"
+            android:drawableTop="@drawable/mr_shop_type3"
+            tools:text="东西南北" />
+        <RadioButton
+            android:id="@+id/shop_type4"
+            style="@style/Home_Type_Style"
+            android:drawableTop="@drawable/mr_shop_type4"
+            tools:text="东西南北" />
+    </LinearLayout>
+</LinearLayout>

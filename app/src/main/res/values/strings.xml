@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MRShop</string>
+    <string name="mr_shoppingmall">51商城</string>
+    <string name="mr_category">分类</string>
+    <string name="mr_shoppingcart">购物车</string>
+    <string name="mr_mine">我的</string>
+    <string name="mr_goods_details">商品详情</string>
+    <string name="mr_focus_on">关注</string>
+    <string name="mr_add_thing">加入购物车</string>
+</resources>

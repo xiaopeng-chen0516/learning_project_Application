@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_corner_white_backgroud"
+    android:orientation="vertical">
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/default_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        tools:text="标题" />
+    <!-- 内容 -->
+    <FrameLayout
+        android:id="@+id/default_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16" />
+    <!-- 按钮 -->
+    <LinearLayout
+        android:id="@+id/default_bottom_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:elevation="@dimen/dp_3"
+        android:translationZ="@dimen/dp_2"
+       >
+        <!-- 取消按钮 -->
+        <Button
+            android:id="@+id/default_cancel"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_btn_selector"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:minHeight="@dimen/dp_40"
+            tools:text="取消" />
+        <!-- 确定按钮 -->
+        <Button
+            android:id="@+id/default_decision"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/decision_selector_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:minHeight="@dimen/dp_40"
+            tools:text="取消" />
+    </LinearLayout>
+</LinearLayout>

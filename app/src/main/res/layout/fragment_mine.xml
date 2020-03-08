@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        android:background="@drawable/mr_mine_background">
+        <!-- 设置头像 -->
+        <ImageView
+            android:id="@+id/custom_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mr_header"
+            android:layout_marginLeft="@dimen/sp_16"/>
+        <!-- 登录注册 -->
+        <TextView
+            android:id="@+id/custom_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/custom_image"
+            android:layout_centerVertical="true"
+            android:text="登录/注册"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <!-- 设置 -->
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_height="wrap_content">
+            <!-- 设置按钮 -->
+            <ImageButton
+                android:id="@+id/custom_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting_selector"
+                android:background="@null"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 关注的店铺 -->
+    <LinearLayout style="@style/Mine_Item_Style">
+        <ImageView
+            android:src="@drawable/mr_mine1"
+            style="@style/Mine_Image_Style" />
+        <TextView
+            android:text="关注的店铺"
+            style="@style/Mine_Text_Style" />
+        <ImageView
+            android:src="@drawable/mr_right_to"
+            style="@style/Mine_Image_Style" />
+    </LinearLayout>
+    <!-- 关注的商品 -->
+    <LinearLayout style="@style/Mine_Item_Style">
+        <ImageView
+            android:src="@drawable/mr_mine2"
+            style="@style/Mine_Image_Style" />
+        <TextView
+            android:text="关注的商品"
+            style="@style/Mine_Text_Style" />
+        <ImageView
+            android:src="@drawable/mr_right_to"
+            style="@style/Mine_Image_Style" />
+    </LinearLayout>
+    <!-- 订单详情 -->
+    <LinearLayout style="@style/Mine_Item_Style">
+        <ImageView
+            android:src="@drawable/mr_mine3"
+            style="@style/Mine_Image_Style" />
+        <TextView
+            android:text="订单详情"
+            style="@style/Mine_Text_Style" />
+        <ImageView
+            android:src="@drawable/mr_right_to"
+            style="@style/Mine_Image_Style" />
+    </LinearLayout>
+    <!-- 快递查询 -->
+    <LinearLayout style="@style/Mine_Item_Style">
+        <ImageView
+            android:src="@drawable/mr_mine4"
+            style="@style/Mine_Image_Style" />
+        <TextView
+            android:text="快递查询"
+            style="@style/Mine_Text_Style" />
+        <ImageView
+            android:src="@drawable/mr_right_to"
+            style="@style/Mine_Image_Style" />
+    </LinearLayout>
+    <!-- 浏览记录 -->
+    <LinearLayout style="@style/Mine_Item_Style">
+        <ImageView
+            android:src="@drawable/mr_mine5"
+            style="@style/Mine_Image_Style" />
+        <TextView
+            android:text="浏览记录"
+            style="@style/Mine_Text_Style" />
+        <ImageView
+            android:src="@drawable/mr_right_to"
+            style="@style/Mine_Image_Style" />
+    </LinearLayout>
+</LinearLayout>

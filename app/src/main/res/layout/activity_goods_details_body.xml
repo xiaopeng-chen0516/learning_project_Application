@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goods_details_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mingrisoft.mrshop.activity.GoodsDetailsActivity">
+
+    <!-- 滑动ViewPager查看视图 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_360">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/show_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/show_page"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/circle_text_background"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            tools:text="1/5" />
+    </RelativeLayout>
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/show_title"
+        style="@style/PaddingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        tools:text="标题" />
+    <!-- 提示 -->
+    <TextView
+        android:id="@+id/show_prompt"
+        style="@style/PaddingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        tools:text="提示" />
+
+    <!-- 价钱与品牌 -->
+    <RelativeLayout
+        style="@style/PaddingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <!-- 价钱 -->
+        <TextView
+            android:id="@+id/show_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            tools:text="￥200.00" />
+        <!-- 品牌 -->
+        <TextView
+            android:id="@+id/show_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            tools:text="品牌"
+            android:maxLength="12"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+    <!-- 店铺 -->
+    <TextView
+        android:id="@+id/show_merchant"
+        style="@style/PaddingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        tools:text="店铺" />
+    <!-- 纯展示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MarginStyle"
+        android:layout_marginBottom="@dimen/dp_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mr_ensure"
+            android:text="店铺发货&amp;售后"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mr_ensure"
+            android:text="货到付款"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mr_ensure"
+            android:text="七天退货"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"/>
+    </LinearLayout>
+    <!-- 评论 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        style="@style/PaddingStyle"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="评价（0）"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好评"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/dp_5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/red"
+            android:layout_marginRight="@dimen/dp_5"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mr_arrow_next"/>
+    </LinearLayout>
+</LinearLayout>

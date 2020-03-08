@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/dialog_add_goods">
+    <LinearLayout
+        android:id="@+id/select_group"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageButton
+            android:id="@+id/cut_count"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/mr_cut_n"/>
+        <!-- 展示选择的数量 -->
+        <EditText
+            android:id="@+id/input_count"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:gravity="center"
+            android:background="@drawable/mr_input_count"
+            android:inputType="number"
+            android:maxLength="2"/>
+        <ImageButton
+            android:id="@+id/add_count"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/mr_add_n"/>
+    </LinearLayout>
+</merge>

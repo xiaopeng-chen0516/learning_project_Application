@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_5"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+    <!-- 选中商品 -->
+    <CheckBox
+        android:id="@+id/item_child_select"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="match_parent"
+        android:button="@null"
+        android:drawableRight="@drawable/cart_check" />
+    <!-- 商品图片 -->
+    <ImageView
+        android:id="@+id/item_child_image"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_10"/>
+    <!-- 右侧布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 商品标题 -->
+        <TextView
+            android:id="@+id/item_child_title"
+            android:layout_width="match_parent"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"/>
+        <!-- 右侧下半部分 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 商品价格 -->
+            <TextView
+                android:id="@+id/item_child_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="商品价格"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/red"
+                android:layout_alignParentBottom="true"/>
+            <LinearLayout
+                android:id="@+id/select_group"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:orientation="horizontal"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+                <ImageButton
+                    android:id="@+id/item_cut_count"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@drawable/mr_cut_n"/>
+                <!-- 展示选择的数量 -->
+                <TextView
+                    android:id="@+id/item_input_count"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:background="@drawable/mr_input_count"
+                    android:maxLength="2"/>
+                <ImageButton
+                    android:id="@+id/item_add_count"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@drawable/mr_add_n"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

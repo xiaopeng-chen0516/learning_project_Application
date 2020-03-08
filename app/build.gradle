@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.mingrisoft.mrshop"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //recyclerview（Android自带）
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    //网络请求
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    //log日志库
+    compile 'com.orhanobut:logger:1.15'
+    //轮播框架
+    compile 'com.youth.banner:banner:1.4.9'
+    //图片加载库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Gson解析工具
+    compile 'com.google.code.gson:gson:2.8.0'
+}

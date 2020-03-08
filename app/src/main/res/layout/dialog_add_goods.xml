@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/dialog_image"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:elevation="@dimen/dp_3"
+            android:scaleType="centerCrop"
+            android:translationZ="@dimen/dp_3" />
+        <!-- 店铺、品牌 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_20">
+            <!-- 品牌 -->
+            <TextView
+                android:id="@+id/dialog_brand"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLength="12"
+                android:lines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <!-- 店铺 -->
+            <TextView
+                android:id="@+id/dialog_merchant"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+            <!-- 注意 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:text="※七日内如无人为损坏，可无条件退货"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        style="@style/MarginStyle"/>
+    <!-- 确定按钮 -->
+    <!-- 价格、商品编号 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MarginStyle">
+        <TextView
+            android:id="@+id/dialog_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/dialog_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="@dimen/sp_16"/>
+    </LinearLayout>
+    <!-- 数量 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        style="@style/MarginStyle"
+        android:layout_marginBottom="@dimen/dp_80">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_16"
+            android:text="数量"/>
+        <!-- 选择数量 -->
+        <include layout="@layout/view_select_count"/>
+    </RelativeLayout>
+    <!-- 确定按钮 -->
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/add_thing_btn_selector"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+</LinearLayout>

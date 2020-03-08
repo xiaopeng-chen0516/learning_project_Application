@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:background="@color/gray"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:descendantFocusability="afterDescendants">
+
+        <CheckBox
+            android:id="@+id/item_group_all"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/cart_check"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/item_group_shop"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/mr_shop_icon"
+            android:textColor="@color/red"
+            tools:text="店铺"/>
+    </LinearLayout>
+</LinearLayout>

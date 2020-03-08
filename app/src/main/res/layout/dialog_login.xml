@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp_16"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:textSize="@dimen/sp_20"
+        android:text="明日登录" />
+
+    <EditText
+        android:id="@+id/mr_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Mine_Text_Style"
+        android:layout_marginTop="@dimen/dp_16"
+        android:hint="请输入账号"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="@dimen/dp_10"
+        android:textSize="@dimen/sp_20"
+        android:background="@drawable/line_edittext"
+        android:lines="1"
+        />
+
+    <EditText
+        android:id="@+id/mr_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Mine_Text_Style"
+        android:layout_marginTop="@dimen/dp_16"
+        android:drawableLeft="@drawable/pwd"
+        android:drawablePadding ="@dimen/dp_10"
+        android:background="@drawable/line_edittext"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:lines="1"
+        android:textSize="@dimen/sp_20"
+        />
+
+    <Button
+        android:id="@+id/mr_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/add_thing_btn_selector"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textSize="@dimen/sp_20"
+        android:text="登录" />
+
+    <TextView
+    android:id="@+id/textView4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:text="马上注册" />
+</LinearLayout>
