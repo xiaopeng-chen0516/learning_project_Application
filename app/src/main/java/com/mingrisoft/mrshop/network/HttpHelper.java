@@ -6,6 +6,8 @@ package com.mingrisoft.mrshop.network;
  * 创建日期： 2017/5/2
  */
 
+
+
 public class HttpHelper {
     //域名
 //    public static final String HTTP_URL = "http://192.168.1.66:8080/Shop/";
